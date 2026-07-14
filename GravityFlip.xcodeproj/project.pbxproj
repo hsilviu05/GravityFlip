@@ -17,6 +17,7 @@
 		7AD24D255ADC8BF94DCF7A2F /* SettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87FA6E92C6A4EEFEE880113 /* SettingsManager.swift */; };
 		7BBBFCDDA429EEC91EF0E5B1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C9BC0A56FFAEA7761D6A1E /* ContentView.swift */; };
 		845D33C53FB4782EB08F656D /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 536D089D3A8870BCCDE97B9A /* PrivacyInfo.xcprivacy */; };
+		CC11223344556677AABBCCDD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC99887766554433AABBCCDD /* Assets.xcassets */; };
 		86623E8749700759BAE9688F /* SoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC037EEE469917B7638FF9E8 /* SoundManager.swift */; };
 		880857BFDBCD6DD9DE22FB12 /* FrequencyCapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127F8EB47489AF14C9396848 /* FrequencyCapTests.swift */; };
 		8EEE7E7713CA0EE1E3FF861F /* StoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0EED81A96D66CEDB59DFA3F /* StoreManager.swift */; };
@@ -42,8 +43,10 @@
 /* Begin PBXFileReference section */
 		0DDD4D13D1F5D99E9258C5DF /* AdConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdConfig.swift; sourceTree = "<group>"; };
 		127F8EB47489AF14C9396848 /* FrequencyCapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrequencyCapTests.swift; sourceTree = "<group>"; };
+		1D9AC22C3006395F00B0676A /* GravityFlip.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GravityFlip.entitlements; sourceTree = "<group>"; };
 		45A5F2FA5A1F2CB8D1036C6B /* Tuning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tuning.swift; sourceTree = "<group>"; };
-		536D089D3A8870BCCDE97B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		536D089D3A8870BCCDE97B9A /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		CC99887766554433AABBCCDD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5562D0FC5E553A5AF560680F /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		6FDC8BF902A40F9240E1BFEC /* AdManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdManager.swift; sourceTree = "<group>"; };
 		75A6EEAA1A896FC5A540F2E9 /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
@@ -59,7 +62,7 @@
 		E64AAC89BAB8DDD1F633A47A /* GravityFlipApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GravityFlipApp.swift; sourceTree = "<group>"; };
 		EC35D6520CA4B09BE25AD611 /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
 		EECBF4367FD3A1CE1F7902C4 /* AppTrackingTransparency.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppTrackingTransparency.framework; path = System/Library/Frameworks/AppTrackingTransparency.framework; sourceTree = SDKROOT; };
-		F653ED4E13CB1697A9DC4B2F /* GravityFlip.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = GravityFlip.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F653ED4E13CB1697A9DC4B2F /* GravityFlip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GravityFlip.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC232A8AD856547EAAAB5C36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		FD1F647FE032CBB1F685EE0B /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
@@ -92,6 +95,8 @@
 		17D3257EB90873DC71988C43 /* GravityFlip */ = {
 			isa = PBXGroup;
 			children = (
+				1D9AC22C3006395F00B0676A /* GravityFlip.entitlements */,
+				CC99887766554433AABBCCDD /* Assets.xcassets */,
 				0DDD4D13D1F5D99E9258C5DF /* AdConfig.swift */,
 				6FDC8BF902A40F9240E1BFEC /* AdManager.swift */,
 				E41591D2A286159478081B71 /* BannerAdView.swift */,
@@ -189,8 +194,6 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				LastUpgradeCheck = 1500;
-				TargetAttributes = {
-				};
 			};
 			buildConfigurationList = 8287727B204C9B36B61A46F6 /* Build configuration list for PBXProject "GravityFlip" */;
 			developmentRegion = en;
@@ -221,6 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				845D33C53FB4782EB08F656D /* PrivacyInfo.xcprivacy in Resources */,
+				CC11223344556677AABBCCDD /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,7 +330,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = GravityFlip/GravityFlip.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = A93FGV7L5Y;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = GravityFlip/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
@@ -334,7 +340,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.gravityflip.game;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hermeneanu.gravityflip;
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -367,7 +373,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = GravityFlip/GravityFlip.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = A93FGV7L5Y;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = GravityFlip/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
@@ -375,7 +383,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.gravityflip.game;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hermeneanu.gravityflip;
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
